@@ -28,7 +28,7 @@ const Form = ({ onSubmit, onChange, value }) => (
 const User = ({ avatar, url, username }) => (
   <div className="user">
     <img src={avatar} alt="Profile" width="50" height="50" />
-    <a href={url} target="_blank" rel="noopener">
+    <a href={url} target="_blank" rel="noreferrer">
       {username}
     </a>
   </div>
