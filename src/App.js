@@ -28,7 +28,7 @@ const Form = ({ onSubmit, onChange, value }) => (
 const User = ({ avatar, url, username }) => (
   <div className="user">
     <img src={avatar} alt="Profile" width="50" height="50" />
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noopener">
       {username}
     </a>
   </div>
@@ -51,7 +51,7 @@ const App = () => {
   return (
     <div className="app">
       <main className="main">
-        <h2>GitHub Search</h2>
+        <h2>Search Github Users</h2>
         <Form
           onChange={onSearchChange}
           onSubmit={onSearchSubmit}
